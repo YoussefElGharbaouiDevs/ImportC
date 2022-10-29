@@ -1,0 +1,12 @@
+-Main page:
+    -About
+    -Contact
+    -Brands (4 models each):
+        -Chevrolet(Suburban, Silverado, Camaro, Bolt Euv)
+        -Ford(F150/F150-raptor, Mustang, Explorer Platinum, Transit Connect)
+        -Benz(--add)
+        -GMC(Sierra 1500, HUMMER EV SUV, Yukon SLE, Acadia AT4)
+        -Dodge(--add)
+        -RR(--add)
+        -Locations:
+        -Casablanca(2 locations), Tanger(2 locations), Marrakech(1 location)
