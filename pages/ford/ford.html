@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="ford.css">
+        <style>
+        @keyframes change{
+    0%{
+        background-image:url(raptor1.jpeg) ;
+    }
+    33%{
+        background-image:url(raptor2.jpeg) ;
+    }
+    66%{
+        background-image:url(raptor3.jpeg) ;
+    }
+    100%{
+        background-image:url(raptor1.jpeg) ;
+    }
+}
+        @keyframes change1{
+    0%{
+        background-image:url(mus1.jpeg) ;
+    }
+    33%{
+        background-image:url(mus2.jpeg) ;
+    }
+    66%{
+        background-image:url(mus3.jpeg) ;
+    }
+    100%{
+        background-image:url(mus1.jpeg) ;
+    }
+}
+        @keyframes change2{
+    0%{
+        background-image:url(tra1.jpeg) ;
+    }
+    33%{
+        background-image:url(tra2.jpeg) ;
+    }
+    66%{
+        background-image:url(tra3.jpeg) ;
+    }
+    100%{
+        background-image:url(tra1.jpeg) ;
+    }
+}
+        @keyframes change3{
+    0%{
+        background-image:url(exp1.jpeg) ;
+    }
+    33%{
+        background-image:url(exp2.jpeg) ;
+    }
+    66%{
+        background-image:url(exp3.webp) ;
+    }
+    100%{
+        background-image:url(exp1.jpeg) ;
+    }
+}
+        </style>
+    </head>
+    <body>
+        <div class="header" id="header">
+            <nav>
+                <img src="logof.png" class="logo">
+                <ul>
+                    <li><a href="#" id="model1">F150/F150-raptor</a></li>
+                    <li><a href="#" id="model2">Mustang</a></li>
+                    <li><a href="#" id="model3">Transit Connect</a></li>
+                    <li><a href="#" id="model4">Explorer Platinum</a></li>
+                </ul>
+            </nav>
+            <div class="info">
+                <div>
+                    <h2 id="one">6</h2>
+                    <p >Seats</p>
+                </div>
+                <div>
+                    <h2 id="three"> 15/18 </h2>
+                    <p >EPA-Est. MPG City/Hwy2</p>
+                </div>
+                <div>
+                    <h2 id="five">29,290$</h2>
+                    <p >Price </p>
+                </div>
+                <div class="space">
+                </div>
+                <div>
+                    <h2 id="model">F150/F150-raptor</h2>
+                </div>
+            </div>
+        </div>
+        <script>
+
+            var header=document.getElementById("header")
+            var m1=document.getElementById("model1")
+            var m2=document.getElementById("model2")
+            var m3=document.getElementById("model3")
+            var m4=document.getElementById("model4")
+            var model=document.getElementById("model")
+            var one=document.getElementById("one")
+            var three=document.getElementById("three")
+            var five=document.getElementById("five")
+           
+            
+
+
+
+            m1.onclick=function(){
+                header.style.backgroundImage="url(rap1.jpeg)";
+                header.style.animation="change 5s infinite ease-in-out";
+                model.innerHTML="F150/F150-raptor"
+                one.innerHTML="6"
+                three.innerHTML="15/18"
+                five.innerHTML="29,290$"
+                
+            }
+            m2.onclick=function(){
+                header.style.backgroundImage="url(mus1.jpeg)";
+                header.style.animation="change1 5s infinite ease-in-out";
+                model.innerHTML="Mustang"
+                one.innerHTML="4"
+                three.innerHTML="21/30"
+                five.innerHTML="27,205$"
+                
+            }
+            m3.onclick=function(){
+                header.style.backgroundImage="url(tra1.jpeg)";
+                header.style.animation="change2 5s infinite ease-in-out";
+                model.innerHTML="Transit Connect"
+                one.innerHTML="7"
+                three.innerHTML="24/28"
+                five.innerHTML="27,920$"
+                
+            }
+            m4.onclick=function(){
+                header.style.backgroundImage="url(exp1.jpeg)";
+                header.style.animation="change3 5s infinite ease-in-out";
+                model.innerHTML="Explorer Platinum"
+                one.innerHTML="7"
+                three.innerHTML="20/28"
+                five.innerHTML="33,245$"
+                
+            }
+            
+        </script>
+    </body>
+</html>

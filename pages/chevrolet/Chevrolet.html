@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <style>
+        @keyframes change{
+    0%{
+        background-image:url(bolt1.jpeg) ;
+    }
+    33%{
+        background-image:url(bolt2.jpeg) ;
+    }
+    66%{
+        background-image:url(bolt3.jpeg) ;
+    }
+    100%{
+        background-image:url(bolt1.jpeg) ;
+    }
+}
+        @keyframes change1{
+    0%{
+        background-image:url(camar4.jpeg) ;
+    }
+    33%{
+        background-image:url(camar2.jpeg) ;
+    }
+    66%{
+        background-image:url(camar3.jpeg) ;
+    }
+    100%{
+        background-image:url(camar4.jpeg) ;
+    }
+}
+        @keyframes change2{
+    0%{
+        background-image:url(silv1.jpeg) ;
+    }
+    33%{
+        background-image:url(silv2.jpeg) ;
+    }
+    66%{
+        background-image:url(silv3.jpeg) ;
+    }
+    100%{
+        background-image:url(silv1.jpeg) ;
+    }
+}
+        @keyframes change3{
+    0%{
+        background-image:url(sub4.jpeg) ;
+    }
+    33%{
+        background-image:url(sub1.jpeg) ;
+    }
+    66%{
+        background-image:url(sub3.jpeg) ;
+    }
+    100%{
+        background-image:url(sub4.jpeg) ;
+    }
+}
+        </style>
+    </head>
+    <body>
+        <div class="header" id="header">
+            <nav>
+                <img src="logoc.png" class="logo">
+                <ul>
+                    <li><a href="#" id="model1">Bolt Euv</a></li>
+                    <li><a href="#" id="model2">Camaro</a></li>
+                    <li><a href="#" id="model3">Silverado</a></li>
+                    <li><a href="#" id="model4">Suburban</a></li>
+                </ul>
+            </nav>
+            <div class="info">
+                <div>
+                    <h2 id="one">EPA-est. 247 mi</h2>
+                    <p id="two">Electric range on full charge</p>
+                </div>
+                <div>
+                    <h2 id="three"> 7.0 seconds </h2>
+                    <p id="four">0-60 AVAIL.</p>
+                </div>
+                <div>
+                    <h2 id="five">Available Super Cruise</h2>
+                    <p id="six">Driver assistance feature</p>
+                </div>
+                <div class="space">
+                </div>
+                <div>
+                    <h2 id="model">Bolt Euv</h2>
+                </div>
+            </div>
+        </div>
+        <script>
+
+            var header=document.getElementById("header")
+            var m1=document.getElementById("model1")
+            var m2=document.getElementById("model2")
+            var m3=document.getElementById("model3")
+            var m4=document.getElementById("model4")
+            var model=document.getElementById("model")
+            var one=document.getElementById("one")
+            var two=document.getElementById("two")
+            var three=document.getElementById("three")
+            var four=document.getElementById("four")
+            var five=document.getElementById("five")
+            var six=document.getElementById("six")
+            
+
+
+
+            m1.onclick=function(){
+                header.style.backgroundImage="url(bolt1.jpeg)";
+                header.style.animation="change 5s infinite ease-in-out";
+                model.innerHTML="Bolt Euv"
+                one.innerHTML="EPA-est. 247 mi"
+                two.innerHTML="Electric range on full charge"
+                three.innerHTML="7.0 seconds"
+                four.innerHTML="0-60 AVAIL."
+                five.innerHTML="Available Super Cruise"
+                six.innerHTML="Driver assistance feature "
+            }
+            m2.onclick=function(){
+                header.style.backgroundImage="url(camar4.jpeg)";
+                header.style.animation="change1 5s infinite ease-in-out";
+                model.innerHTML="Camaro"
+                one.innerHTML="650"
+                two.innerHTML="MAX AVAIL. HP"
+                three.innerHTML="3.5 seconds"
+                four.innerHTML="0-60 AVAIL."
+                five.innerHTML="4"
+                six.innerHTML="AVAIL. POWERTRAINS"
+            }
+            m3.onclick=function(){
+                header.style.backgroundImage="url(silv1.jpeg)";
+                header.style.animation="change2 5s infinite ease-in-out";
+                model.innerHTML="Silverado"
+                one.innerHTML="445"
+                two.innerHTML="MAX AVAIL. HP"
+                three.innerHTML="36,000 lbs."
+                four.innerHTML="MAX TRAILERING"
+                five.innerHTML="83.5 cu. ft."
+                six.innerHTML="MAX BED VOLUME"
+            }
+            m4.onclick=function(){
+                header.style.backgroundImage="url(sub4.jpeg)";
+                header.style.animation="change3 5s infinite ease-in-out";
+                model.innerHTML="Suburban"
+                one.innerHTML="420"
+                two.innerHTML="MAX AVAIL. HP"
+                three.innerHTML="14/20"
+                four.innerHTML="MPG city/hwy"
+                five.innerHTML="144.7 cu. ft."
+                six.innerHTML="Max cargo volume"
+            }
+            
+        </script>
+    </body>
+</html>

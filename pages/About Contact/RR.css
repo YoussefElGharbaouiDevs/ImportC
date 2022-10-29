@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.hero{
+    width: 100%;
+}
+.hero .row{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    margin: auto;
+}
+.hero .row .left-sec{
+    width: 30%;
+    margin-left: 10px;
+}
+.hero .row .left-sec h2{
+    font-size: 50px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.hero .row .left-sec h2 span{
+    color: peru;
+    font-size: 70px;
+}
+.hero .row .left-sec p{
+    margin: 20px 0;
+    color: peru;
+    line-height: 20px;
+    padding-right: 150px;
+    margin-top: 80px;
+}
+.hero .row .left-sec .discover-btn{
+    display: flex;
+    align-items: center;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 50px;
+    padding: 0 25px;
+    border-radius: 3px solid rgb(196, 187, 170);
+    background-color: rgb(211, 139, 5);
+    box-shadow: 5px 7px 20px #000;
+}
+.hero .row .left-sec .discover-btn a{
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-right: 15px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.hero .row .left-sec .discover-btn span{
+    color: #fff;
+    font-size: 35px;
+}
+.hero .information{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 100%;
+}
+.hero .information .production{
+    margin-right: 50px;
+    line-height: 3px;
+}
+.hero .information .production h2{
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+.hero .information .production p{
+    padding-right: 0;
+    letter-spacing: 1px;
+    margin-top: 25px;
+}
+ .right-sec{
+    width: 65%;
+    height: 550px;
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    margin-right: 15px;
+    background-image: url('mansory_rolls_royce_cullinan_coastline_4k_8k-HD.jpg');
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 10px 5px white;
+    animation: slider 15s infinite linear;
+}
+@keyframes slider{
+    0%{background-image: url('mansory_rolls_royce_cullinan_coastline_5k_2-HD.jpg');}
+    25%{background-image: url('blue-cullinan-british-cars-tuning-cullinan-rolls-royce.jpg');}
+    25%{background-image: url('mansory_rolls_royce_cullinan_coastline_4k_8k-HD.jpg');}
+    50%{background-image: url('mansory_rolls_royce_cullinan_coastline_5k_interior-HD.jpg');}
+
+}

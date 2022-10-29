@@ -1,0 +1,69 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: '', sans-serif;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(raptor1.jpeg);
+    background-color: rgba(0,0 ,0 , 0.5);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    padding: 0 7%;
+    transition: background-image 1s;
+    
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+    margin: 20px 40px;
+    font-size: 1.3em;
+    text-shadow: 0 0 0 black, 1px 2px 7px rgb(0, 0, 0);
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    
+}
+.info{
+    width: 100%;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+}
+.info div{
+    margin: 0 20px;
+}
+.info div h2 {
+    font-size: 33px;
+    font-weight: 400;
+}
+.info .space{
+    flex: 1;
+    background: white;
+    height: 4px;
+}
